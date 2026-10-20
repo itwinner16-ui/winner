@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Eric NTIHINYUKA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="page-transition" id="page-transition"></div>
+<div class="scroll-progress" id="scroll-progress"></div>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- ───── HEADER ───── -->
+<header id="top-header">
+    <nav class="container navbar">
+        <a class="logo" href="index.html"><span class="logo-icon">E</span>ric</a>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ───── PAGE HERO ───── -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Projects</span>
+            </div>
+            <h1>My <span>Projects</span></h1>
+            <p>A collection of hands-on work, academic projects, and personal explorations in tech.</p>
+        </div>
+    </section>
+
+    <!-- ───── STATS BAR ───── -->
+    <div class="proj-stats-bar">
+        <div class="container">
+            <div class="proj-stats-inner">
+                <div class="proj-stat-item">
+                    <strong class="counter" data-target="6">0</strong>
+                    <span>Total Projects</span>
+                </div>
+                <div class="proj-stat-div"></div>
+                <div class="proj-stat-item">
+                    <strong class="counter" data-target="4">0</strong>
+                    <span>Completed</span>
+                </div>
+                <div class="proj-stat-div"></div>
+                <div class="proj-stat-item">
+                    <strong>2</strong>
+                    <span>In Progress</span>
+                </div>
+                <div class="proj-stat-div"></div>
+                <div class="proj-stat-item">
+                    <strong>4</strong>
+                    <span>Tech Areas</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ───── PROJECTS GRID ───── -->
+    <section class="section">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-folder-open"></i> PORTFOLIO</p>
+            <h2>What I've Built</h2>
+            <p class="section-sub">Each project represents real learning — not just reading, but doing.</p>
+
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="networking">Networking</button>
+                <button class="filter-btn" data-filter="linux">Linux</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+            </div>
+
+            <div class="projects-full-grid" id="projects-container">
+
+                <article class="proj-card" data-category="networking">
+                    <div class="proj-card-header">
+                        <div class="proj-card-icon" style="background:linear-gradient(135deg,#1a6cf0,#00d4b4);">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <span class="proj-status done">Completed</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h3>Campus Network Topology</h3>
+                        <p>Designed and simulated a multi-floor campus network using Cisco Packet Tracer. The topology includes VLANs for departmental segmentation, inter-VLAN routing via a Layer 3 switch, DHCP for automatic IP assignment, and NAT for internet connectivity.</p>
+                        <div class="project-tags">
+                            <span>Cisco Packet Tracer</span><span>VLANs</span><span>DHCP</span><span>NAT</span><span>Layer 3</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="#"><i class="fas fa-eye"></i> View Details</a>
+                            <a href="#"><i class="fas fa-file-alt"></i> Report</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-category="linux">
+                    <div class="proj-card-header">
+                        <div class="proj-card-icon" style="background:linear-gradient(135deg,#d97706,#f59e0b);">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <span class="proj-status done">Completed</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h3>Linux Server Administration</h3>
+                        <p>Configured and managed an Ubuntu 22.04 server for a simulated small business environment. Tasks included user accounts, Samba file share, cron-based backup scripts, and UFW firewall rules.</p>
+                        <div class="project-tags">
+                            <span>Ubuntu 22.04</span><span>Bash</span><span>Samba</span><span>UFW</span><span>Cron</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="#"><i class="fas fa-eye"></i> View Details</a>
+                            <a href="#"><i class="fab fa-github"></i> Scripts</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-category="security">
+                    <div class="proj-card-header">
+                        <div class="proj-card-icon" style="background:linear-gradient(135deg,#db2777,#ec4899);">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <span class="proj-status done">Completed</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h3>Cybersecurity Awareness Campaign</h3>
+                        <p>Researched, designed, and presented a cybersecurity awareness campaign for university peers. Topics covered phishing attacks, password security, social engineering, and basic incident response.</p>
+                        <div class="project-tags">
+                            <span>Security Research</span><span>Social Engineering</span><span>Phishing</span><span>Presentation</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="#"><i class="fas fa-eye"></i> View Details</a>
+                            <a href="#"><i class="fas fa-file-powerpoint"></i> Slides</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-category="web">
+                    <div class="proj-card-header">
+                        <div class="proj-card-icon" style="background:linear-gradient(135deg,#7c3aed,#9b59b6);">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <span class="proj-status done">Completed</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Built this multi-page personal portfolio from scratch using pure HTML, CSS, and JS. Features dark mode, animations, typing effect, skill bars, responsive layout, and a contact form.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>Responsive</span><span>JavaScript</span><span>Dark Mode</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="index.html"><i class="fas fa-eye"></i> Live Site</a>
+                            <a href="#"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-category="networking">
+                    <div class="proj-card-header">
+                        <div class="proj-card-icon" style="background:linear-gradient(135deg,#059669,#10b981);">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <span class="proj-status progress">In Progress</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h3>Home Lab Network Setup</h3>
+                        <p>Setting up a home lab with a physical router, managed switch, and multiple VMs to practice real-world networking scenarios — subnetting, port forwarding, and a local DNS server using Pi-hole.</p>
+                        <div class="project-tags">
+                            <span>Home Lab</span><span>Subnetting</span><span>DNS</span><span>Pi-hole</span><span>VMs</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="#"><i class="fas fa-eye"></i> View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-category="security">
+                    <div class="proj-card-header">
+                        <div class="proj-card-icon" style="background:linear-gradient(135deg,#0f766e,#14b8a6);">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <span class="proj-status progress">In Progress</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h3>Network Security Audit Lab</h3>
+                        <p>Practicing basic network security auditing using free tools in a controlled virtual environment — Wireshark for traffic analysis, Nmap for port scanning, and UFW/iptables rule analysis.</p>
+                        <div class="project-tags">
+                            <span>Wireshark</span><span>Nmap</span><span>VirtualBox</span><span>Kali Linux</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="#"><i class="fas fa-eye"></i> View Details</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── EDUCATION & EXPERIENCE ───── -->
+    <section class="exp-section">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-briefcase"></i> BACKGROUND</p>
+            <h2>Education & Experience</h2>
+            <p class="section-sub">The foundation behind my projects and skills.</p>
+
+            <div class="exp-grid">
+                <div class="exp-col">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="exp-item">
+                        <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+                        <div class="exp-card">
+                            <div class="exp-card-year">2023 – Present</div>
+                            <h4>BSc Computer Science</h4>
+                            <p>Catholic University of Rwanda — networking, databases, operating systems, algorithms, and software engineering.</p>
+                        </div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+                        <div class="exp-card">
+                            <div class="exp-card-year">2022</div>
+                            <h4>Secondary School Certificate</h4>
+                            <p>Graduated with distinction in Mathematics and Physics. Strong analytical thinking foundation.</p>
+                        </div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+                        <div class="exp-card">
+                            <div class="exp-card-year">Self-paced</div>
+                            <h4>Online Courses & Certifications</h4>
+                            <p>Cisco Networking Basics, Cybersecurity Essentials, Linux Essentials (in progress), and Web Development fundamentals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-col">
+                    <h3><i class="fas fa-star"></i> Activities & Roles</h3>
+                    <div class="exp-item">
+                        <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+                        <div class="exp-card">
+                            <div class="exp-card-year">2023 – Present</div>
+                            <h4>Study Group Leader</h4>
+                            <p>Coordinate weekly tech study sessions covering networking labs, Linux practice, and exam preparation.</p>
+                        </div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+                        <div class="exp-card">
+                            <div class="exp-card-year">2023</div>
+                            <h4>Cybersecurity Workshop Presenter</h4>
+                            <p>Delivered a cybersecurity awareness session to 50+ university students on phishing, passwords, and safe online practices.</p>
+                        </div>
+                    </div>
+                    <div class="exp-item">
+                        <div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div>
+                        <div class="exp-card">
+                            <div class="exp-card-year">Ongoing</div>
+                            <h4>Self-Directed Tech Learning</h4>
+                            <p>Dedicated weekly hours to home lab practice, online courses, and building personal projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── CTA ───── -->
+    <div class="cta-banner">
+        <div class="container">
+            <h2>Interested in Collaborating?</h2>
+            <p>I'm always open to new challenges, internship opportunities, and interesting projects.</p>
+            <a class="button ghost" href="contact.html"><i class="fas fa-envelope"></i> Let's Talk</a>
+        </div>
+    </div>
+
+</main>
+
+<!-- ───── FOOTER ───── -->
+<footer>
+    <div class="footer-inner container">
+        <div class="footer-brand">
+            <a class="logo" href="index.html"><span class="logo-icon">E</span>ric NTIHINYUKA</a>
+            <p>Computer Science Student · Rwanda</p>
+            <a href="mailto:itwinner16@gmail.com" class="footer-email"><i class="fas fa-envelope"></i> itwinner16@gmail.com</a>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">
+            <span>© 2026 Eric NTIHINYUKA. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+    /* Filter */
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+            btn.classList.add("active");
+            const filter = btn.dataset.filter;
+            document.querySelectorAll(".proj-card").forEach(card => {
+                const show = filter === "all" || card.dataset.category === filter;
+                card.style.opacity = "0";
+                card.style.transform = "scale(0.95)";
+                setTimeout(() => {
+                    card.style.display = show ? "flex" : "none";
+                    if (show) {
+                        requestAnimationFrame(() => {
+                            card.style.opacity = "1";
+                            card.style.transform = "none";
+                        });
+                    }
+                }, 150);
+            });
+        });
+    });
+
+    /* Animated counters */
+    const counterObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = +el.dataset.target;
+                let current = 0;
+                const step = Math.ceil(target / 40);
+                const interval = setInterval(() => {
+                    current += step;
+                    if (current >= target) { current = target; clearInterval(interval); }
+                    el.textContent = current + "+";
+                }, 40);
+                counterObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+    document.querySelectorAll(".counter").forEach(el => counterObserver.observe(el));
+</script>
+
+</body>
+</html>

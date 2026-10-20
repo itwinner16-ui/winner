@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Eric NTIHINYUKA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="page-transition" id="page-transition"></div>
+<div class="scroll-progress" id="scroll-progress"></div>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- WhatsApp floating button -->
+<a class="whatsapp-btn" href="https://wa.me/250788298775" target="_blank" rel="noopener" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ───── HEADER ───── -->
+<header id="top-header">
+    <nav class="container navbar">
+        <a class="logo" href="index.html"><span class="logo-icon">E</span>ric</a>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ───── PAGE HERO ───── -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Contact</span>
+            </div>
+            <h1>Get In <span>Touch</span></h1>
+            <p>Have an opportunity, a question, or just want to say hi? I'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- ───── CONTACT MAIN ───── -->
+    <section class="section contact-page">
+        <div class="container">
+            <div class="contact-page-grid">
+
+                <!-- Left -->
+                <div class="contact-page-info">
+                    <div class="availability-card">
+                        <div class="avail-dot"></div>
+                        <div>
+                            <strong>Available for Opportunities</strong>
+                            <span>Open to internships, part-time roles, and collaborations</span>
+                        </div>
+                    </div>
+                    <div class="cp-info-card">
+                        <div class="cp-icon"><i class="fas fa-phone"></i></div>
+                        <div><strong>Phone / WhatsApp</strong><span>0788298775</span></div>
+                    </div>
+                    <div class="cp-info-card">
+                        <div class="cp-icon"><i class="fas fa-envelope"></i></div>
+                        <div><strong>Email</strong><span><a href="mailto:itwinner16@gmail.com" style="color:var(--accent);">itwinner16@gmail.com</a></span></div>
+                    </div>
+                    <div class="cp-info-card">
+                        <div class="cp-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div><strong>Location</strong><span>Rwanda — open to remote opportunities worldwide</span></div>
+                    </div>
+                    <div class="cp-info-card">
+                        <div class="cp-icon"><i class="fas fa-university"></i></div>
+                        <div><strong>University</strong><span>Catholic University of Rwanda<br>Computer Science Department</span></div>
+                    </div>
+                    <div class="cp-info-card">
+                        <div class="cp-icon"><i class="fas fa-clock"></i></div>
+                        <div><strong>Response Time</strong><span>Usually within 24–48 hours</span></div>
+                    </div>
+
+                    <!-- Quick WhatsApp CTA -->
+                    <a class="whatsapp-cta" href="https://wa.me/250788298775" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>Chat on WhatsApp</strong>
+                            <span>Fastest way to reach me</span>
+                        </div>
+                    </a>
+
+                    <div class="cp-social">
+                        <p>Find me on</p>
+                        <div class="social-links">
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:itwinner16@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: form -->
+                <div class="contact-big-form">
+                    <h3>Send Me a Message</h3>
+                    <p>Fill in the form — all fields marked * are required.</p>
+
+                    <form id="contact-form" onsubmit="handleSubmit(event)" novalidate>
+                        <div class="form-2col">
+                            <div class="form-group-dark">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" placeholder="John" required>
+                                <span class="field-error" id="err-first">Please enter your first name.</span>
+                            </div>
+                            <div class="form-group-dark">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" placeholder="Doe" required>
+                                <span class="field-error" id="err-last">Please enter your last name.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-2col">
+                            <div class="form-group-dark">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                                <span class="field-error" id="err-email">Please enter a valid email.</span>
+                            </div>
+                            <div class="form-group-dark">
+                                <label for="phone">Phone (optional)</label>
+                                <input type="tel" id="phone" placeholder="+250 000 000 000">
+                            </div>
+                        </div>
+
+                        <div class="form-group-dark">
+                            <label for="reason">Reason for Contact *</label>
+                            <select id="reason" required>
+                                <option value="" disabled selected>Select a reason</option>
+                                <option value="internship">Internship Opportunity</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="job">Job / Part-time Role</option>
+                                <option value="networking">Professional Networking</option>
+                                <option value="question">General Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="field-error" id="err-reason">Please select a reason.</span>
+                        </div>
+
+                        <div class="form-group-dark">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" placeholder="Brief subject line" required>
+                            <span class="field-error" id="err-subject">Please enter a subject.</span>
+                        </div>
+
+                        <div class="form-group-dark">
+                            <label for="message">
+                                Message *
+                                <span class="char-counter" id="char-counter">0 / 500</span>
+                            </label>
+                            <textarea id="message" rows="6" maxlength="500"
+                                placeholder="Write your message here. The more detail, the better I can respond..." required></textarea>
+                            <span class="field-error" id="err-message">Please write a message.</span>
+                        </div>
+
+                        <label class="form-check">
+                            <input type="checkbox" id="consent" required>
+                            I confirm my information is accurate and agree to be contacted.
+                        </label>
+                        <span class="field-error" id="err-consent" style="margin-bottom:12px; display:none;">Please confirm to proceed.</span>
+
+                        <button type="submit" class="button primary full-width submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                            <span class="btn-spinner" style="display:none;"><i class="fas fa-circle-notch fa-spin"></i></span>
+                        </button>
+
+                        <div id="form-success" class="form-success" style="margin-top:14px;">
+                            ✅ Thank you! Your message was received. I'll get back to you within 24–48 hours.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── FAQ ───── -->
+    <section class="faq-section">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-circle-question"></i> COMMON QUESTIONS</p>
+            <h2>Frequently Asked</h2>
+            <p class="section-sub">Quick answers before you reach out.</p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4><i class="fas fa-briefcase"></i> Are you open to internships?</h4>
+                    <p>Yes! I'm actively looking for internship opportunities in networking, IT support, cybersecurity, or any related IT field.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-globe"></i> Are you open to remote work?</h4>
+                    <p>Absolutely. While I'm based in Rwanda, I'm open to remote roles, virtual collaborations, and flexible working arrangements.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-clock"></i> How quickly do you respond?</h4>
+                    <p>I typically respond within 24–48 hours. For urgent matters, WhatsApp is the fastest option.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-handshake"></i> Open to collaborating on projects?</h4>
+                    <p>Yes! I enjoy collaborative work on networking labs, security research, or IT-related projects. Reach out with your idea.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-language"></i> What languages can we use?</h4>
+                    <p>Kinyarwanda, English, and French comfortably. I can manage basic professional communication in Chinese too.</p>
+                </div>
+                <div class="faq-item">
+                    <h4><i class="fas fa-graduation-cap"></i> When do you graduate?</h4>
+                    <p>I'm currently mid-program at the Catholic University of Rwanda. I can share specific details about my availability on request.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── LOCATION ───── -->
+    <section style="background:var(--bg-light); padding:50px 0;">
+        <div class="container" style="text-align:center;">
+            <p class="small-title" style="justify-content:center;"><i class="fas fa-map-marker-alt"></i> LOCATION</p>
+            <h2 style="margin-bottom:8px;">Based in Rwanda</h2>
+            <p style="color:var(--text-muted); margin-bottom:28px;">Catholic University of Rwanda · Open to Remote & Hybrid Opportunities</p>
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt"></i>
+                <strong>Rwanda, Africa</strong>
+                <span>Catholic University of Rwanda</span>
+                <a class="button outline" href="https://maps.google.com/?q=Catholic+University+of+Rwanda" target="_blank" rel="noopener" style="margin-top:12px; font-size:.82rem;">
+                    <i class="fas fa-directions"></i> Open in Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ───── FOOTER ───── -->
+<footer>
+    <div class="footer-inner container">
+        <div class="footer-brand">
+            <a class="logo" href="index.html"><span class="logo-icon">E</span>ric NTIHINYUKA</a>
+            <p>Computer Science Student · Rwanda</p>
+            <a href="mailto:itwinner16@gmail.com" class="footer-email"><i class="fas fa-envelope"></i> itwinner16@gmail.com</a>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">
+            <span>© 2026 Eric NTIHINYUKA. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+/* ── Character counter ── */
+const msgArea = document.getElementById("message");
+const charCounter = document.getElementById("char-counter");
+if (msgArea) {
+    msgArea.addEventListener("input", () => {
+        const len = msgArea.value.length;
+        charCounter.textContent = len + " / 500";
+        charCounter.style.color = len > 450 ? "#f97316" : "rgba(255,255,255,.35)";
+    });
+}
+
+/* ── Real-time field validation ── */
+function validate(inputId, errorId, checkFn) {
+    const input = document.getElementById(inputId);
+    const err   = document.getElementById(errorId);
+    if (!input || !err) return true;
+    const valid = checkFn(input.value.trim());
+    input.classList.toggle("field-invalid", !valid);
+    err.style.display = valid ? "none" : "block";
+    return valid;
+}
+
+["first-name","last-name","email","reason","subject","message"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener("blur", () => validateField(id));
+});
+
+function validateField(id) {
+    const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const map = {
+        "first-name": [v => v.length > 0, "err-first"],
+        "last-name":  [v => v.length > 0, "err-last"],
+        "email":      [v => emailRx.test(v), "err-email"],
+        "reason":     [v => v.length > 0, "err-reason"],
+        "subject":    [v => v.length > 0, "err-subject"],
+        "message":    [v => v.length >= 10, "err-message"],
+    };
+    if (!map[id]) return true;
+    return validate(id, map[id][1], map[id][0]);
+}
+
+/* ── Form submit ── */
+function handleSubmit(e) {
+    e.preventDefault();
+    const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const checks = [
+        validate("first-name","err-first", v => v.length > 0),
+        validate("last-name","err-last",   v => v.length > 0),
+        validate("email","err-email",      v => emailRx.test(v)),
+        validate("reason","err-reason",    v => v.length > 0),
+        validate("subject","err-subject",  v => v.length > 0),
+        validate("message","err-message",  v => v.length >= 10),
+    ];
+    const consentEl = document.getElementById("consent");
+    const consentErr = document.getElementById("err-consent");
+    if (!consentEl.checked) {
+        consentErr.style.display = "block";
+        checks.push(false);
+    } else {
+        consentErr.style.display = "none";
+    }
+
+    if (checks.includes(false)) return;
+
+    /* Simulate sending */
+    const btn = document.querySelector(".submit-btn");
+    btn.disabled = true;
+    btn.querySelector("span:first-of-type").style.display = "none";
+    btn.querySelector(".btn-spinner").style.display = "inline";
+
+    setTimeout(() => {
+        btn.disabled = false;
+        btn.querySelector("span:first-of-type").style.display = "inline";
+        btn.querySelector(".btn-spinner").style.display = "none";
+        const success = document.getElementById("form-success");
+        success.style.display = "block";
+        e.target.reset();
+        charCounter.textContent = "0 / 500";
+        success.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        setTimeout(() => success.style.display = "none", 7000);
+    }, 1400);
+}
+
+/* Fade-in */
+const fadeObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
+}, { threshold: 0.1 });
+document.querySelectorAll(".section, .faq-section").forEach(s => { s.classList.add("fade-section"); fadeObs.observe(s); });
+</script>
+
+</body>
+</html>

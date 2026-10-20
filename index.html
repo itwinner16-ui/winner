@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric NTIHINYUKA | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ── PAGE TRANSITION OVERLAY ── -->
+<div class="page-transition" id="page-transition"></div>
+
+<!-- ── PROGRESS BAR ── -->
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<!-- ── BACK TO TOP ── -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ───── HEADER ───── -->
+<header id="top-header">
+    <nav class="container navbar">
+        <a class="logo" href="index.html">
+            <span class="logo-icon">E</span>ric
+        </a>
+        <div class="links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ───── HERO ───── -->
+    <section id="home" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <!-- Particle dots -->
+        <canvas id="particles" class="particles-canvas"></canvas>
+
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="badge"><i class="fas fa-circle pulse"></i> Available for opportunities</p>
+                <h1>Hi, I'm <span>Eric NTIHINYUKA</span></h1>
+                <div class="typing-wrapper">
+                    <span class="typing-prefix">I'm a </span>
+                    <span class="typing-text" id="typing"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-desc">Passionate about technology, networking, cybersecurity, and solving real-world problems. Currently studying at the Catholic University of Rwanda.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="skills.html"><i class="fas fa-code"></i> My Skills</a>
+                    <a class="button outline" href="contact.html"><i class="fas fa-envelope"></i> Contact Me</a>
+                    <a class="button ghost" href="about.html"><i class="fas fa-user"></i> About</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong class="counter" data-target="4">0</strong>
+                        <span>Languages</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong class="counter" data-target="6">0</strong>
+                        <span>Tech Skills</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong class="counter" data-target="4">0</strong>
+                        <span>Projects</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-wrapper">
+                <div class="photo-ring">
+                    <img src="winner.jpeg" alt="Eric NTIHINYUKA">
+                </div>
+                <div class="floating-badge badge-net"><i class="fas fa-network-wired"></i> Networking</div>
+                <div class="floating-badge badge-sec"><i class="fas fa-shield-halved"></i> Security</div>
+                <div class="floating-badge badge-linux"><i class="fab fa-linux"></i> Linux</div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ───── ABOUT PREVIEW ───── -->
+    <section id="about" class="section">
+        <div class="container about-grid">
+            <div class="about-img-col">
+                <div class="about-img-card">
+                    <img src="winner.jpeg" alt="Eric NTIHINYUKA">
+                    <div class="about-img-overlay">
+                        <p><i class="fas fa-map-marker-alt"></i> Rwanda</p>
+                        <p><i class="fas fa-university"></i> Catholic University of Rwanda</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <p class="small-title"><i class="fas fa-user-circle"></i> ABOUT ME</p>
+                <h2>Who I Am</h2>
+                <p>I am a Computer Science student at the Catholic University of Rwanda with a strong interest in networking, Linux systems, cybersecurity, and IT support.</p>
+                <p>I enjoy exploring new technologies, collaborating in teams, and taking on leadership roles. My multilingual background allows me to communicate effectively across diverse environments.</p>
+
+                <div class="about-info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <strong>Education</strong>
+                            <span>Computer Science, CUR</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <strong>Languages</strong>
+                            <span>Kinyarwanda, English, French, Chinese</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <strong>Interests</strong>
+                            <span>Networking, Cybersecurity, Linux</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <strong>Soft Skills</strong>
+                            <span>Leadership, Teamwork, Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                    <a class="button primary" href="about.html"><i class="fas fa-user"></i> Full Story</a>
+                    <a class="button outline" href="contact.html"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── TOOLS STRIP ───── -->
+    <section class="tools-strip">
+        <div class="container">
+            <p class="tools-label">Tools & Technologies I Use</p>
+            <div class="tools-track-wrapper">
+                <div class="tools-track">
+                    <div class="tool-chip"><i class="fas fa-network-wired"></i> Cisco Packet Tracer</div>
+                    <div class="tool-chip"><i class="fab fa-linux"></i> Ubuntu Linux</div>
+                    <div class="tool-chip"><i class="fas fa-shield-halved"></i> Wireshark</div>
+                    <div class="tool-chip"><i class="fas fa-terminal"></i> Bash Scripting</div>
+                    <div class="tool-chip"><i class="fas fa-fire-flame-curved"></i> UFW Firewall</div>
+                    <div class="tool-chip"><i class="fas fa-database"></i> MySQL</div>
+                    <div class="tool-chip"><i class="fab fa-html5"></i> HTML5 / CSS3</div>
+                    <div class="tool-chip"><i class="fas fa-code"></i> VS Code</div>
+                    <div class="tool-chip"><i class="fab fa-github"></i> GitHub</div>
+                    <div class="tool-chip"><i class="fas fa-server"></i> VirtualBox</div>
+                    <!-- duplicate for seamless loop -->
+                    <div class="tool-chip"><i class="fas fa-network-wired"></i> Cisco Packet Tracer</div>
+                    <div class="tool-chip"><i class="fab fa-linux"></i> Ubuntu Linux</div>
+                    <div class="tool-chip"><i class="fas fa-shield-halved"></i> Wireshark</div>
+                    <div class="tool-chip"><i class="fas fa-terminal"></i> Bash Scripting</div>
+                    <div class="tool-chip"><i class="fas fa-fire-flame-curved"></i> UFW Firewall</div>
+                    <div class="tool-chip"><i class="fas fa-database"></i> MySQL</div>
+                    <div class="tool-chip"><i class="fab fa-html5"></i> HTML5 / CSS3</div>
+                    <div class="tool-chip"><i class="fas fa-code"></i> VS Code</div>
+                    <div class="tool-chip"><i class="fab fa-github"></i> GitHub</div>
+                    <div class="tool-chip"><i class="fas fa-server"></i> VirtualBox</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── SKILLS PREVIEW ───── -->
+    <section id="profession" class="section light">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-tools"></i> WHAT I KNOW</p>
+            <h2>My Skills</h2>
+            <p class="section-sub">A mix of technical expertise and professional soft skills.</p>
+
+            <div class="skills-cards">
+                <article class="skill-card">
+                    <div class="skill-icon net"><i class="fas fa-network-wired"></i></div>
+                    <h3>Networking</h3>
+                    <p>IP addressing, subnetting, DNS, DHCP, and network fundamentals using Cisco tools.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon linux"><i class="fab fa-linux"></i></div>
+                    <h3>Linux Systems</h3>
+                    <p>Ubuntu, bash scripting, user management, file permissions, and system administration.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon sec"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Cybersecurity</h3>
+                    <p>Security concepts, threat analysis, data protection, and secure practices.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon support"><i class="fas fa-headset"></i></div>
+                    <h3>IT Support</h3>
+                    <p>Hardware/software troubleshooting, computer maintenance, and technical help desk.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon lead"><i class="fas fa-users-gear"></i></div>
+                    <h3>Leadership</h3>
+                    <p>Team coordination, project planning, public communication, and conflict resolution.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon lang"><i class="fas fa-language"></i></div>
+                    <h3>Languages</h3>
+                    <p>Fluent in Kinyarwanda, English, French, and intermediate Chinese.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                </article>
+            </div>
+
+            <div style="text-align:center;margin-top:32px;">
+                <a class="button primary" href="skills.html"><i class="fas fa-arrow-right"></i> See Full Skills Page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── FEATURED PROJECTS ───── -->
+    <section id="projects" class="section">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-folder-open"></i> MY WORK</p>
+            <h2>Featured Projects</h2>
+            <p class="section-sub">A selection of hands-on work from my studies and personal learning.</p>
+
+            <div class="projects-grid">
+                <article class="project-card feat-card" data-href="projects.html">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#1a6cf0,#00d4b4)"><i class="fas fa-network-wired"></i></div>
+                    <div class="project-content">
+                        <h3>Campus Network Topology</h3>
+                        <p>Designed a multi-floor campus network with VLANs, inter-VLAN routing, DHCP, and NAT using Cisco Packet Tracer.</p>
+                        <div class="project-tags">
+                            <span>Cisco</span><span>VLANs</span><span>DHCP</span>
+                        </div>
+                    </div>
+                    <div class="feat-card-hover"><span>View Project <i class="fas fa-arrow-right"></i></span></div>
+                </article>
+
+                <article class="project-card feat-card" data-href="projects.html">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#d97706,#f59e0b)"><i class="fab fa-linux"></i></div>
+                    <div class="project-content">
+                        <h3>Linux Server Administration</h3>
+                        <p>Configured Ubuntu 22.04 with user management, Samba file share, cron backups, and UFW firewall rules.</p>
+                        <div class="project-tags">
+                            <span>Ubuntu</span><span>Bash</span><span>Samba</span>
+                        </div>
+                    </div>
+                    <div class="feat-card-hover"><span>View Project <i class="fas fa-arrow-right"></i></span></div>
+                </article>
+
+                <article class="project-card feat-card" data-href="projects.html">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#db2777,#ec4899)"><i class="fas fa-shield-halved"></i></div>
+                    <div class="project-content">
+                        <h3>Cybersecurity Awareness</h3>
+                        <p>Research, design, and delivery of a university cybersecurity awareness campaign covering phishing, social engineering, and safe practices.</p>
+                        <div class="project-tags">
+                            <span>Security</span><span>Research</span><span>Presentation</span>
+                        </div>
+                    </div>
+                    <div class="feat-card-hover"><span>View Project <i class="fas fa-arrow-right"></i></span></div>
+                </article>
+
+                <article class="project-card feat-card" data-href="projects.html">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#7c3aed,#9b59b6)"><i class="fas fa-globe"></i></div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Built this responsive multi-page portfolio from scratch with HTML, CSS, JS — animations, dark mode, and mobile-first design.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="feat-card-hover"><span>View Project <i class="fas fa-arrow-right"></i></span></div>
+                </article>
+            </div>
+
+            <div style="text-align:center;margin-top:32px;">
+                <a class="button primary" href="projects.html"><i class="fas fa-arrow-right"></i> All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── TESTIMONIALS / QUOTE ───── -->
+    <section class="section light">
+        <div class="container">
+            <p class="small-title" style="justify-content:center;"><i class="fas fa-quote-left"></i> PHILOSOPHY</p>
+            <h2 style="text-align:center; margin-bottom:40px;">What Drives Me</h2>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"The only way to do great work is to love what you do. I love every challenge that technology throws at me."</p>
+                    <div class="quote-author"><strong>Eric NTIHINYUKA</strong><span>On his passion for tech</span></div>
+                </div>
+                <div class="quote-card highlight-quote">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Technology is not just about code and cables — it's about connecting people, solving problems, and building a better future for everyone."</p>
+                    <div class="quote-author"><strong>Eric NTIHINYUKA</strong><span>On why technology matters</span></div>
+                </div>
+                <div class="quote-card">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Every error message is a lesson. Every broken lab is a chance to understand something deeper. I don't fear failure — I learn from it."</p>
+                    <div class="quote-author"><strong>Eric NTIHINYUKA</strong><span>On learning from mistakes</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── CONTACT STRIP ───── -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-envelope"></i> GET IN TOUCH</p>
+            <h2>Contact Me</h2>
+            <p class="section-sub light-sub">Feel free to reach out for opportunities, collaboration, or just to say hi.</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Phone</strong>
+                            <span>0788298775</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Email</strong>
+                            <span><a href="mailto:itwinner16@gmail.com" style="color:var(--accent);">itwinner16@gmail.com</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Rwanda</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-university"></i></div>
+                        <div>
+                            <strong>University</strong>
+                            <span>Catholic University of Rwanda</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:itwinner16@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <a class="button primary" href="contact.html" style="margin-top:4px;">
+                        <i class="fas fa-external-link-alt"></i> Full Contact Page
+                    </a>
+                </div>
+
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="button primary full-width">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <p class="form-success" id="form-success">✅ Message sent! I'll get back to you soon.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ───── FOOTER ───── -->
+<footer>
+    <div class="footer-inner container">
+        <div class="footer-brand">
+            <a class="logo" href="index.html"><span class="logo-icon">E</span>ric NTIHINYUKA</a>
+            <p>Computer Science Student · Rwanda</p>
+            <a href="mailto:itwinner16@gmail.com" class="footer-email"><i class="fas fa-envelope"></i> itwinner16@gmail.com</a>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">
+            <span>© 2026 Eric NTIHINYUKA. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+/* ── Typing animation ── */
+const roles = ["Computer Science Student","Networking Enthusiast","Linux Explorer","Cybersecurity Learner","IT Problem Solver"];
+let ri = 0, ci = 0, deleting = false;
+const typingEl = document.getElementById("typing");
+function type() {
+    const word = roles[ri];
+    typingEl.textContent = deleting ? word.substring(0, ci--) : word.substring(0, ci++);
+    if (!deleting && ci > word.length) { deleting = true; setTimeout(type, 1500); return; }
+    if (deleting && ci < 0) { deleting = false; ri = (ri + 1) % roles.length; }
+    setTimeout(type, deleting ? 60 : 100);
+}
+type();
+
+/* ── Animated counters ── */
+const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = +el.dataset.target;
+            let current = 0;
+            const step = Math.ceil(target / 40);
+            const interval = setInterval(() => {
+                current += step;
+                if (current >= target) { current = target; clearInterval(interval); }
+                el.textContent = current + "+";
+            }, 40);
+            counterObserver.unobserve(el);
+        }
+    });
+}, { threshold: 0.5 });
+document.querySelectorAll(".counter").forEach(el => counterObserver.observe(el));
+
+/* ── Contact form ── */
+function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById("form-success").style.display = "block";
+    e.target.reset();
+    setTimeout(() => document.getElementById("form-success").style.display = "none", 4000);
+}
+
+/* ── Featured card click ── */
+document.querySelectorAll(".feat-card").forEach(card => {
+    card.addEventListener("click", () => {
+        window.location.href = card.dataset.href;
+    });
+});
+
+/* ── Particles canvas ── */
+(function() {
+    const canvas = document.getElementById("particles");
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    let W, H, dots = [];
+    function resize() { W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; }
+    resize();
+    window.addEventListener("resize", resize);
+    for (let i = 0; i < 55; i++) {
+        dots.push({ x: Math.random()*W, y: Math.random()*H, r: Math.random()*1.5+.5,
+            dx: (Math.random()-.5)*.4, dy: (Math.random()-.5)*.4, a: Math.random()*.5+.1 });
+    }
+    function draw() {
+        ctx.clearRect(0, 0, W, H);
+        dots.forEach(d => {
+            d.x += d.dx; d.y += d.dy;
+            if (d.x < 0 || d.x > W) d.dx *= -1;
+            if (d.y < 0 || d.y > H) d.dy *= -1;
+            ctx.beginPath();
+            ctx.arc(d.x, d.y, d.r, 0, Math.PI*2);
+            ctx.fillStyle = `rgba(0,212,180,${d.a})`;
+            ctx.fill();
+        });
+        requestAnimationFrame(draw);
+    }
+    draw();
+})();
+</script>
+
+</body>
+</html>
+
+</script>
+
+</body>
+</html>

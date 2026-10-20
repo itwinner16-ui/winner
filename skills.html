@@ -1,0 +1,363 @@
+wi<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Eric NTIHINYUKA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="page-transition" id="page-transition"></div>
+<div class="scroll-progress" id="scroll-progress"></div>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- ───── HEADER ───── -->
+<header id="top-header">
+    <nav class="container navbar">
+        <a class="logo" href="index.html"><span class="logo-icon">E</span>ric</a>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ───── PAGE HERO ───── -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Skills</span>
+            </div>
+            <h1>My <span>Skills</span></h1>
+            <p>A comprehensive overview of my technical competencies, soft skills, and learning path.</p>
+        </div>
+    </section>
+
+    <!-- ───── INTRO + STATS ───── -->
+    <section class="section">
+        <div class="container">
+            <div class="skills-page-intro">
+                <div>
+                    <p class="small-title"><i class="fas fa-chart-bar"></i> OVERVIEW</p>
+                    <h2>What I Bring to the Table</h2>
+                    <p style="color:var(--text-muted); margin-bottom:14px;">My skill set spans networking infrastructure, Linux system administration, cybersecurity fundamentals, and strong professional soft skills developed through academic and team experiences.</p>
+                    <p style="color:var(--text-muted);">I am actively expanding my knowledge through online courses, lab practice, and real-world projects. Every skill listed here is backed by hands-on experience, not just theory.</p>
+                </div>
+                <div class="skills-overview-stats">
+                    <div class="overview-stat">
+                        <strong class="counter" data-target="6">0</strong>
+                        <span>Technical Skills</span>
+                    </div>
+                    <div class="overview-stat">
+                        <strong>4</strong>
+                        <span>Languages Spoken</span>
+                    </div>
+                    <div class="overview-stat">
+                        <strong class="counter" data-target="4">0</strong>
+                        <span>Projects Done</span>
+                    </div>
+                    <div class="overview-stat">
+                        <strong>2+</strong>
+                        <span>Years of Study</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proficiency legend -->
+            <div class="proficiency-legend">
+                <div class="legend-item"><div class="legend-dot dot-advanced"></div> Advanced (75%+)</div>
+                <div class="legend-item"><div class="legend-dot dot-inter"></div> Intermediate (50–74%)</div>
+                <div class="legend-item"><div class="legend-dot dot-beginner"></div> Beginner (&lt;50%)</div>
+            </div>
+
+            <p class="small-title"><i class="fas fa-server"></i> TECHNICAL SKILLS</p>
+            <h2 style="margin-bottom:24px;">Core Competencies</h2>
+
+            <div class="skills-cards">
+                <article class="skill-card">
+                    <div class="skill-icon net"><i class="fas fa-network-wired"></i></div>
+                    <span class="skill-level level-inter">Intermediate</span>
+                    <h3>Networking</h3>
+                    <p>IP addressing, subnetting, DNS, DHCP, VLANs, routing protocols, and network design using Cisco Packet Tracer.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon linux"><i class="fab fa-linux"></i></div>
+                    <span class="skill-level level-inter">Intermediate</span>
+                    <h3>Linux Systems</h3>
+                    <p>Ubuntu & Debian, bash scripting, user/group management, file permissions, cron jobs, and basic server administration.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon sec"><i class="fas fa-shield-halved"></i></div>
+                    <span class="skill-level level-inter">Intermediate</span>
+                    <h3>Cybersecurity</h3>
+                    <p>Security concepts, CIA triad, common threats, vulnerability awareness, firewall basics, and data protection principles.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon support"><i class="fas fa-headset"></i></div>
+                    <span class="skill-level level-advanced">Advanced</span>
+                    <h3>IT Support</h3>
+                    <p>Hardware and software troubleshooting, OS installation, peripheral setup, basic network diagnostics, and help desk support.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon lead"><i class="fas fa-users-gear"></i></div>
+                    <span class="skill-level level-advanced">Advanced</span>
+                    <h3>Leadership</h3>
+                    <p>Team coordination, project planning, meeting facilitation, conflict resolution, and motivating peers toward common goals.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon lang"><i class="fas fa-language"></i></div>
+                    <span class="skill-level level-advanced">Advanced</span>
+                    <h3>Multilingual</h3>
+                    <p>Native Kinyarwanda, fluent English and French, intermediate Chinese — enabling communication in diverse environments.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── TOOLS & TECHNOLOGIES ───── -->
+    <section class="section light">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-wrench"></i> TOOLS</p>
+            <h2>Technologies I Use</h2>
+            <p class="section-sub">The actual software, platforms, and environments I work with day to day.</p>
+
+            <div class="tech-icons-grid">
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#e8f0fe; color:#1a6cf0;"><i class="fas fa-network-wired"></i></div>
+                    <span>Cisco Packet Tracer</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#fef3c7; color:#d97706;"><i class="fab fa-linux"></i></div>
+                    <span>Ubuntu Linux</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#fce7f3; color:#db2777;"><i class="fas fa-fish"></i></div>
+                    <span>Wireshark</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#d1fae5; color:#059669;"><i class="fas fa-terminal"></i></div>
+                    <span>Bash / Shell</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#ede9fe; color:#7c3aed;"><i class="fas fa-code"></i></div>
+                    <span>VS Code</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#e8f0fe; color:#1a6cf0;"><i class="fab fa-github"></i></div>
+                    <span>GitHub</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#fef9c3; color:#b45309;"><i class="fas fa-database"></i></div>
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#ccfbf1; color:#0f766e;"><i class="fas fa-server"></i></div>
+                    <span>VirtualBox</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#fce7f3; color:#db2777;"><i class="fab fa-html5"></i></div>
+                    <span>HTML5 / CSS3</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#d1fae5; color:#059669;"><i class="fas fa-fire-flame-curved"></i></div>
+                    <span>UFW Firewall</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#ede9fe; color:#7c3aed;"><i class="fas fa-share-alt"></i></div>
+                    <span>Samba</span>
+                </div>
+                <div class="tech-icon-card">
+                    <div class="tech-icon-wrap" style="background:#fef3c7; color:#d97706;"><i class="fas fa-clock"></i></div>
+                    <span>Cron Jobs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── SOFT SKILLS ───── -->
+    <section class="section">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-people-arrows"></i> SOFT SKILLS</p>
+            <h2>Professional Skills</h2>
+            <p class="section-sub">Technical knowledge alone isn't enough — these are the human skills that make the difference.</p>
+
+            <div class="skills-cards">
+                <article class="skill-card">
+                    <div class="skill-icon lead"><i class="fas fa-comments"></i></div>
+                    <h3>Communication</h3>
+                    <p>Clear, concise written and verbal communication across English, French, and Kinyarwanda. Strong presentation skills.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon net"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Problem Solving</h3>
+                    <p>Breaking down complex issues into manageable steps. Comfortable with ambiguity and finding creative solutions.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon support"><i class="fas fa-users"></i></div>
+                    <h3>Teamwork</h3>
+                    <p>Experienced in group projects, study teams, and collaborative environments. Supportive and reliable team member.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon sec"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Time Management</h3>
+                    <p>Balancing coursework, self-study, and projects effectively. Meeting deadlines and prioritizing tasks efficiently.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon lang"><i class="fas fa-brain"></i></div>
+                    <h3>Critical Thinking</h3>
+                    <p>Evaluating information objectively, questioning assumptions, and making informed decisions based on evidence.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+                </article>
+                <article class="skill-card">
+                    <div class="skill-icon linux"><i class="fas fa-book-open"></i></div>
+                    <h3>Self-Learning</h3>
+                    <p>Proactive learner. Regularly studies through online platforms, documentation, and hands-on lab practice.</p>
+                    <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── LEARNING & CERTS ───── -->
+    <section class="section light">
+        <div class="container">
+            <p class="small-title"><i class="fas fa-certificate"></i> LEARNING PATH</p>
+            <h2>Courses & Certifications</h2>
+            <p class="section-sub">Areas I've studied formally or am actively exploring through self-directed learning.</p>
+
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon blue"><i class="fas fa-network-wired"></i></div>
+                    <div>
+                        <h4>Cisco Networking Basics</h4>
+                        <p>Fundamentals of network design and configuration with Cisco tools.</p>
+                        <span class="cert-status status-done">✓ Completed</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon orange"><i class="fab fa-linux"></i></div>
+                    <div>
+                        <h4>Linux Essentials (LPI)</h4>
+                        <p>Linux command line, file system, scripting, and administration.</p>
+                        <span class="cert-status status-progress">⟳ In Progress</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon pink"><i class="fas fa-shield-halved"></i></div>
+                    <div>
+                        <h4>Cybersecurity Essentials</h4>
+                        <p>Threat landscape, security controls, and safe computing practices.</p>
+                        <span class="cert-status status-done">✓ Completed</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon green"><i class="fas fa-headset"></i></div>
+                    <div>
+                        <h4>IT Support Fundamentals</h4>
+                        <p>Hardware, software troubleshooting, and customer service basics.</p>
+                        <span class="cert-status status-done">✓ Completed</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon purple"><i class="fas fa-globe"></i></div>
+                    <div>
+                        <h4>Web Development Basics</h4>
+                        <p>HTML, CSS, and responsive design for building personal projects.</p>
+                        <span class="cert-status status-done">✓ Completed</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon teal"><i class="fas fa-database"></i></div>
+                    <div>
+                        <h4>Database Fundamentals</h4>
+                        <p>Relational databases, SQL queries, and data modeling concepts.</p>
+                        <span class="cert-status status-planned">◌ Planned</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───── CTA ───── -->
+    <div class="cta-banner">
+        <div class="container">
+            <h2>See My Skills in Action</h2>
+            <p>Check out the projects where I've applied these skills to real problems.</p>
+            <a class="button ghost" href="projects.html"><i class="fas fa-folder-open"></i> View Projects</a>
+        </div>
+    </div>
+
+</main>
+
+<!-- ───── FOOTER ───── -->
+<footer>
+    <div class="footer-inner container">
+        <div class="footer-brand">
+            <a class="logo" href="index.html"><span class="logo-icon">E</span>ric NTIHINYUKA</a>
+            <p>Computer Science Student · Rwanda</p>
+            <a href="mailto:itwinner16@gmail.com" class="footer-email"><i class="fas fa-envelope"></i> itwinner16@gmail.com</a>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">
+            <span>© 2026 Eric NTIHINYUKA. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+    /* Animated counters */
+    const counterObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = +el.dataset.target;
+                let current = 0;
+                const step = Math.ceil(target / 40);
+                const interval = setInterval(() => {
+                    current += step;
+                    if (current >= target) { current = target; clearInterval(interval); }
+                    el.textContent = current + "+";
+                }, 40);
+                counterObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+    document.querySelectorAll(".counter").forEach(el => counterObserver.observe(el));
+</script>
+
+</body>
+</html>
